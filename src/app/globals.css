@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* Custom dark mode styles */
+@layer base {
+  .dark .bg-grey {
+    background-color: #250ac2; /* Dark mode background */
+  }
+}
