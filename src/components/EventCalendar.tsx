@@ -1,5 +1,6 @@
 "use client";
 
+import { MoreHoriz } from "@mui/icons-material";
 import Image from "next/image";
 import { useState } from "react";
 import Calendar from "react-calendar";
@@ -44,7 +45,8 @@ const EventCalendar = () => {
       <div className="p-4 overflow-hidden shadow-lg">
         <div className="flex items-center justify-between">
           <h1 className="text-xl font-semibold my-4">Events</h1>
-          <Image src="/moreDark.png" alt="" width={20} height={20} />
+          <MoreHoriz fontSize="medium" sx={{ color: "black" }} />
+
         </div>
         <div className="flex flex-col gap-4">
           {events.map((event) => (

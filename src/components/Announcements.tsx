@@ -3,7 +3,7 @@ const Announcements = () => {
       <div className="bg-white p-4 rounded-md shadow-lg overflow-hidden">
         <div className="flex items-center justify-between">
           <h1 className="text-xl font-semibold">Announcements</h1>
-          <span className="text-xs text-gray-400">View All</span>
+          <span className="text-xs text-black-400 text-underline">View All</span>
         </div>
         <div className="flex flex-col gap-4 mt-4">
           <div className="bg-lamaSkyLight rounded-md p-4">
