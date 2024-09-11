@@ -16,7 +16,7 @@ const UserCard = ({ type }: { type: string }) => {
           color: "black",
         }}
       >
-        <div className="flex justify-between items-center">
+        <div className="flex mx-auto">
           <CardActions>
             <Typography className="text-[10px] bg-white px-2 py-1 rounded-full text-green-600">
               2024/25

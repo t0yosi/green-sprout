@@ -17,19 +17,19 @@ const data = [
   },
   {
     name: "Girls",
-    count: 53,
+    count: 42,
     fill: "pink",
   },
   {
     name: "Boys",
-    count: 53,
+    count: 64,
     fill: "#C3EBFA",
   },
 ];
 
 const CountChart = () => {
   return (
-    <div className="bg-white rounded-xl w-full h-full p-4">
+    <div className="bg-white rounded-xl w-full h-full p-4 overflow-hidden shadow-lg">
       {/* TITLE */}
       <div className="flex justify-between items-center">
         <h1 className="text-lg font-semibold">Students</h1>

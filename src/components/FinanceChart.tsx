@@ -78,7 +78,7 @@ const data = [
 
 const FinanceChart = () => {
   return (
-    <div className="bg-white rounded-xl w-full h-full p-4">
+    <div className="bg-white rounded-xl w-full h-full p-4 overflow-hidden shadow-lg" >
       <div className="flex justify-between items-center">
         <h1 className="text-lg font-semibold">Finance</h1>
         <MoreHoriz fontSize="large" sx={{ color: "black"}} />
@@ -99,11 +99,11 @@ const FinanceChart = () => {
           <XAxis
             dataKey="name"
             axisLine={false}
-            tick={{ fill: "#d1d5db" }}
+            tick={{ fill: "grey" }}
             tickLine={false}
             tickMargin={10}
           />
-          <YAxis axisLine={false} tick={{ fill: "#d1d5db" }} tickLine={false}  tickMargin={20}/>
+          <YAxis axisLine={false} tick={{ fill: "grey" }} tickLine={false}  tickMargin={20}/>
           <Tooltip />
           <Legend
             align="center"

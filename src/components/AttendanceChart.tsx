@@ -45,7 +45,7 @@ const data = [
 
 const AttendanceChart = () => {
   return (
-    <div className="bg-white rounded-lg p-4 h-full">
+    <div className="bg-white rounded-lg p-4 h-full overflow-hidden shadow-lg">
       <div className="flex justify-between items-center">
         <h1 className="text-lg font-semibold">Attendance</h1>
         <MoreHoriz fontSize="large" sx={{ color: "black"}} />
@@ -56,17 +56,17 @@ const AttendanceChart = () => {
           <XAxis
             dataKey="name"
             axisLine={false}
-            tick={{ fill: "#d1d5db" }}
+            tick={{ fill: "grey" }}
             tickLine={false}
           />
-          <YAxis axisLine={false} tick={{ fill: "#d1d5db" }} tickLine={false} />
+          <YAxis axisLine={false} tick={{ fill: "grey" }} tickLine={false} />
           <Tooltip
             contentStyle={{ borderRadius: "10px", borderColor: "lightgray" }}
           />
           <Legend
             align="left"
             verticalAlign="top"
-            wrapperStyle={{ paddingTop: "20px", paddingBottom: "40px", fontWeight: "bold" }}
+            wrapperStyle={{ paddingTop: "20px", paddingBottom: "40px", fontWeight: "lighter" }}
           />
           <Bar
             dataKey="present"
